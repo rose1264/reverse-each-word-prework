@@ -1,3 +1,5 @@
 def reverse_each_word(string)
-  string.reverse
+  tmpArray = string.split(" ")
+  reverseArray = tmpArray.map {|x| x.reverse}
+  reverseArray.join(" ")
 end
